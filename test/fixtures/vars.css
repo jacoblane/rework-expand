@@ -3,7 +3,6 @@
   --color-names: navy, blue, aqua;
   --widths: 25, 50, 75, 100;
 }
-
 :expand {
   expand-selector: .bg-[v], var(--color-names);
   expand-background-color:  var(--colors);

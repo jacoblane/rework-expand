@@ -1,4 +1,4 @@
-
+// Needs work
 
 var rework = require('rework');
 var vars   = require('rework-vars');
@@ -11,9 +11,6 @@ var aVars  = fs.readFileSync('test/fixtures/vars.css', 'utf8');
 var aToken = fs.readFileSync('test/fixtures/tokens.css', 'utf8');
 
 var eBasic = fs.readFileSync('test/expected/basic.css', 'utf8');
-//var eVars  = fs.readFileSync('test/expected/vars.css', 'utf8');
-//var eToken = fs.readFileSync('test/expected/tokens.css', 'utf8');
-
 
 describe('rework-expand', function() {
   it('should expand', function(){
@@ -22,7 +19,7 @@ describe('rework-expand', function() {
     assert.equal(actual, expected, '...')
   });
   it('should expand with rework-vars', function(){
-    var actual   = rework(aVars).use(expand()).toString();
+    var actual   = rework(aVars).use(vars()).use(expand()).toString().trim();
     var expected = rework(eBasic).toString();
     assert.equal(actual, expected, '...')
   });

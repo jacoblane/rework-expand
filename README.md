@@ -24,7 +24,7 @@ var newCss = rework('some css here')
   .use(reworkExpand());
 ```
 
-Gives
+Makes
 
 ```css
 .w25 {
@@ -64,7 +64,7 @@ This
   color: #fff;
 }
 ```
-Makes:
+Makes
 ```css
 .navy {
   background-color: #001f3f;
@@ -89,7 +89,7 @@ The following tokens are available by default:
 * `[l]` for the array length
 * `[v]` for the value, ie array[i]
 
-Tokens are used before the array (comma separated lis ) of values, and should be followed by a comma.
+Tokens are used before the comma separated list of values (array), and should be followed by a comma.
 
 ```css
 :root {
@@ -109,7 +109,7 @@ Tokens are used before the array (comma separated lis ) of values, and should be
 }
 ```
 
-Yields
+Makes
 
 ```css
 .width--25 {

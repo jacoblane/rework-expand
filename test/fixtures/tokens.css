@@ -1,0 +1,14 @@
+:expand {
+  expand-selector: .bg-<value>, navy, blue, aqua;
+  expand-background-color: #001f3f, #0074D9, #7FDBFF;
+}
+
+:expand {
+  expand-selector: .width-<index>;
+  expand-width:  <value>px, 25, 50, 75, 100;
+}
+
+:expand {
+  expand-selector: .width-<index1>of<length>, 25, 50, 75, 100;
+  expand-width:  <value>%, 25, 50, 75, 100;
+}

@@ -49,6 +49,14 @@ function compileRuleSet(decls, options) {
       declarations.push(decl);
     }
   });
+
+  if (typeof selector == 'undefined' && expanders.length > 0) {
+    throw new Error('Expand: missing an expand selector declaration.');
+  }
+  if (typeof selector != 'undefined' && expanders.length == 0) {
+    throw new Error('Expand: missing an expandable property declaration.');
+  }
+  
   newRules = buildNewRules(selector, expanders, declarations, options);
   return newRules;
 }
