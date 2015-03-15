@@ -1,0 +1,20 @@
+:root {
+  --colors: #001f3f, #0074D9, #7FDBFF;
+  --color-names: navy, blue, aqua;
+  --widths: 25, 50, 75, 100;
+}
+
+:expand {
+  expand-selector: .bg-[v], var(--color-names);
+  expand-background-color:  var(--colors);
+}
+
+:expand {
+  expand-selector: .width-[i];
+  expand-width:  [v]px, var(--widths);
+}
+
+:expand {
+  expand-selector: .width-[j]of[l], var(--widths);
+  expand-width:  [v]%, var(--widths);
+}
